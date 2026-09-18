@@ -10,13 +10,9 @@
 
 ## Status
 
-Issue creation is currently blocked by authentication and tooling availability.
+Issue creation is complete. The parent issue and all planned child issues have been created in the target repository, with priority labels applied. The parent issue body lists the child issues by title; cross-linking them by issue number (`#2`-`#7`) is still an open follow-up.
 
-* GitHub CLI (`gh`) is not installed in this environment.
-* The environment is not authenticated to GitHub, so no live issue URLs can be created from this session.
-* Per the backlog guardrails and GitHub execution conventions, no mutation was attempted without a verified platform preflight and authenticated target.
-
-## Planned MVP issue set
+## Created MVP issue set
 
 ### Parent issue
 
