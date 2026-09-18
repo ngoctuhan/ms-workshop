@@ -1,0 +1,55 @@
+{
+  "brdFile": ".copilot-tracking/brd-sessions/compliance-check-system-brd.md",
+  "lastAccessed": "2026-09-18T00:00:00Z",
+  "currentPhase": "business-requirements-draft",
+  "questionsAsked": [
+    "initiative-name",
+    "scope-boundary",
+    "business-outcomes",
+    "governance-model",
+    "evidence-sources"
+  ],
+  "answeredQuestions": {
+    "initiative-name": "Compliance Check System",
+    "scope-boundary": "Human-in-the-loop compliance review support for evidence and policy comparison",
+    "business-outcomes": "Faster case preparation, better consistency, earlier gap detection, and stronger traceability",
+    "governance-model": "Human reviewers remain accountable for final decisions and escalation",
+    "evidence-sources": "Policy libraries, case records, and supporting evidence stored in existing systems"
+  },
+  "referencesProcessed": [
+    {
+      "file": ".copilot-tracking/research/2026-09-18/compliance-check-system-session-context.md",
+      "status": "analyzed",
+      "keyFindings": "Human-in-the-loop review, auditability, escalation, and evidence-grounded policy review are required."
+    },
+    {
+      "file": ".copilot-tracking/research/2026-09-18/compliance-check-system-research.md",
+      "status": "analyzed",
+      "keyFindings": "The likely business value is faster, more consistent case review with risk controls rather than autonomous compliance decisions."
+    },
+    {
+      "file": ".copilot-tracking/research/workshop-input/leancanvas.md",
+      "status": "analyzed",
+      "keyFindings": "The target workflow is an internal review assistant for policy-sensitive case assessment, supported by traceability and escalation."
+    }
+  ],
+  "nextActions": [
+    "Validate target workflow and policy sources with a business owner",
+    "Confirm the risk tiers and escalation thresholds for high-risk cases",
+    "Refine success metrics against actual operating baselines"
+  ],
+  "qualityChecks": [
+    "problem-defined",
+    "stakeholders-identified",
+    "outcomes-measured",
+    "scope-bounded",
+    "constraints-documented",
+    "assumptions-tracked",
+    "risks-identified",
+    "open-questions-listed"
+  ],
+  "userPreferences": {
+    "detail-level": "concise",
+    "question-style": "structured"
+  }
+}

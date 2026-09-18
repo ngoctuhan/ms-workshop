@@ -8,20 +8,20 @@ This MVP focuses on one grounded review job: a compliance or relationship case i
 
 ## Target repository and creation status
 
-* Repository: https://github.com/asiapartners/hve-innovation
-* Current status: GitHub issue creation is blocked in this session because the browser session is signed out and the GitHub CLI is not installed (`gh` not available).
-* Proposed issue hierarchy remains ready to create once auth is available.
+* Verified repository: https://github.com/ngoctuhan/ms-workshop
+* Repository owner/name: ngoctuhan/ms-workshop
+* Current status: GitHub issue creation is complete and verified from the repository.
 
-## Planned issue hierarchy
+## Created issue hierarchy
 
-* Parent issue: `MVP: Grounded compliance review assistant`
+* Parent issue: `MVP: Grounded compliance review assistant` — https://github.com/ngoctuhan/ms-workshop/issues/1
 * Child issues:
-  * `P0: Intake and permission-aware evidence retrieval`
-  * `P0: Policy matching and exception detection`
-  * `P0: Human escalation and approval gate`
-  * `P1: Traceability and reviewer override history`
-  * `P1: Pilot governance, privacy, and security review`
-  * `P2: Publication readiness assessment (provisional)`
+  * `P0: Intake and permission-aware evidence retrieval` — https://github.com/ngoctuhan/ms-workshop/issues/2
+  * `P0: Policy matching and exception detection` — https://github.com/ngoctuhan/ms-workshop/issues/3
+  * `P0: Human escalation and approval gate` — https://github.com/ngoctuhan/ms-workshop/issues/4
+  * `P1: Traceability and reviewer override history` — https://github.com/ngoctuhan/ms-workshop/issues/5
+  * `P1: Pilot governance, privacy, and security review` — https://github.com/ngoctuhan/ms-workshop/issues/6
+  * `P2: Publication readiness assessment (provisional)` — https://github.com/ngoctuhan/ms-workshop/issues/7
 
 ## Priority labels
 
