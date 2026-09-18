@@ -13,17 +13,16 @@ keywords:
   - HVE roles
 estimated_reading_time: 10
 ---
-
 ## Workshop Agenda
 
-| Step | Activity                                                                                        | Time   |
-|------|-------------------------------------------------------------------------------------------------|--------|
-| 1    | [Workshop Overview](partner-workshop.md)                                                        | 30 min |
-| 2    | [Set up Codespaces or local VS Code](partner-workshop-setup.md)                                 | 30 min |
+| Step | Activity                                                                                             | Time   |
+| ---- | ---------------------------------------------------------------------------------------------------- | ------ |
+| 1    | [Workshop Overview](partner-workshop.md)                                                              | 30 min |
+| 2    | [Set up Codespaces or local VS Code](partner-workshop-setup.md)                                       | 30 min |
 | 3    | [**Plan, Envision, Experience, Architecture Design, Backlog**](partner-workshop-role-tracks.md) | 90 min |
-| 4    | [Validation & Solution](partner-workshop-solution.md)                                           | 30 min |
-| 5    | [Microsoft Marketplace and Copilot Agent Store readiness](partner-workshop-publishing.md)       | 60 min |
-| 6    | [Handoff to Implementation & Commercialization](partner-workshop-implementation.md)             | 30 min |
+| 4    | [Validation &amp; Solution](partner-workshop-solution.md)                                             | 30 min |
+| 5    | [Microsoft Marketplace and Copilot Agent Store readiness](partner-workshop-publishing.md)             | 60 min |
+| 6    | [Handoff to Implementation &amp; Commercialization](partner-workshop-implementation.md)               | 30 min |
 
 Use this guide during the role-exercise portion of the workshop. Participants should work from the same scenario, capture assumptions, and leave with a handoff that the next role can use.
 
@@ -42,7 +41,7 @@ This sequence helps each role build on the previous one without waiting for perf
 ## HVE vs Agile
 
 | Agile                                         | HVE                                                       |
-|-----------------------------------------------|-----------------------------------------------------------|
+| --------------------------------------------- | --------------------------------------------------------- |
 | Sprint-first and feature-first                | Outcome-first and value-first                             |
 | Backlog refinement often drives delivery      | Shared context and AI-assisted planning drive delivery    |
 | Teams often interpret requirements separately | Humans and agents work from the same context and evidence |
@@ -51,7 +50,7 @@ This sequence helps each role build on the previous one without waiting for perf
 ## Track overview
 
 | Track                 | Primary objective                                                 | Suggested output                       |
-|-----------------------|-------------------------------------------------------------------|----------------------------------------|
+| --------------------- | ----------------------------------------------------------------- | -------------------------------------- |
 | Project Management    | Turn context into requirements, priorities, and backlog structure | Requirements draft and backlog outline |
 | Subject Matter Expert | Capture business facts, rules, constraints, and evidence          | Context pack                           |
 | Design                | Express the user experience, pain points, and success criteria    | Experience draft                       |
@@ -89,9 +88,10 @@ Use the HVE agents as lightweight helpers for your role. Start with your own dra
 Capture the business truth before anyone designs or builds anything.
 
 ### Create Context
+
 1. For your selected use case, gather available evidence such as policy documents, SOPs, process diagrams, notes, document references, PDFs, screenshots, and images.
-1. For workshop case, keep synthetic or public source files in a manually managed `./copilot-tracking/research/workshop-input/` folder, organized by type such as `policies/`, `sops/`, and `process-diagrams/`. Keep original diagram files beside rendered images.
-1. For an actual production case, do not copy customer, regulated, confidential, or production evidence into the repository. Keep it in an approved system such as a governed SharePoint or OneDrive library, Azure Blob Storage or ADLS with controlled access, an approved document-management system, or a secure data room. Confirm classification, retention, and access permissions, then provide `/rpi-research` with a trusted readable path or controlled links.
+2. For workshop case, keep synthetic or public source files in a manually managed `./copilot-tracking/research/workshop-input/` folder, organized by type such as `policies/`, `sops/`, and `process-diagrams/`. Keep original diagram files beside rendered images.
+3. For an actual production case, do not copy customer, regulated, confidential, or production evidence into the repository. Keep it in an approved system such as a governed SharePoint or OneDrive library, Azure Blob Storage or ADLS with controlled access, an approved document-management system, or a secure data room. Confirm classification, retention, and access permissions, then provide `/rpi-research` with a trusted readable path or controlled links.
 
 ### Marketplace Lean Canvas as Workshop Input
 
@@ -99,16 +99,16 @@ Use this lean canvas as the SME's quick workshop input before the PM, design, an
 
 Keep each item evidence-based. Where data is unknown, write `Unknown` and note the source or decision needed. Do not invent customer segments, pricing, or metrics.
 
-| Business problem or pain | Target customer or user | Unique value proposition |
-|---|---|---|
+| Business problem or pain                                                                         | Target customer or user                                       | Unique value proposition                                                 |
+| ------------------------------------------------------------------------------------------------ | ------------------------------------------------------------- | ------------------------------------------------------------------------ |
 | What problem is expensive, risky, slow, or frustrating today? What is the cost of doing nothing? | Who is affected? Who pays? Who is the primary decision maker? | What makes this offering meaningfully better, faster, safer, or cheaper? |
 
-| Solution or core offering | Distribution or channels | Revenue model or value capture |
-|---|---|---|
+| Solution or core offering                                                                                  | Distribution or channels                                                                     | Revenue model or value capture                                           |
+| ---------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------ |
 | What is the offering, workflow, or service that addresses the problem? What is the minimum viable version? | How do customers discover, buy, and receive the offering? What channels and partners matter? | What are the revenue streams, pricing model, and commercial assumptions? |
 
-| Cost structure | Key metrics and success measures | Competitive advantage or unfair edge |
-|---|---|---|
+| Cost structure                                                              | Key metrics and success measures                                                                                   | Competitive advantage or unfair edge                                                                                               |
+| --------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------- |
 | What are the major cost drivers, dependencies, and operational constraints? | What metrics will prove value: adoption, speed, quality, cost reduction, risk reduction, throughput, or retention? | What gives this initiative a durable advantage: policy fit, workflow depth, data access, trust, low friction, or domain expertise? |
 
 #### SME & Product Manager prompt to fill the canvas
@@ -116,6 +116,7 @@ Keep each item evidence-based. Where data is unknown, write `Unknown` and note t
 ```text
 /rpi-research session-context=.copilot-tracking/research/[date]/[session-name]-session-context.md. Read the topic and evidence root from the session context. Use the business evidence, policies, process notes, and user-impact notes in the research artifact. Draft a concise lean canvas for an [FSI relationship manager assistant]. Capture the problem, target customer segments, value proposition, core offering, channels, revenue model, costs, success metrics, and unique advantage. Separate facts from assumptions and flag each unknown item for follow-up. Keep the wording grounded in evidence, not marketing language. Save the output under ./copilot-tracking/research/workshop-input/leancanvas.md
 ```
+
 #### Output checklist
 
 1. Problem statement with affected users and impact.
@@ -127,6 +128,7 @@ Keep each item evidence-based. Where data is unknown, write `Unknown` and note t
 7. Risks, dependencies, and unknowns the next roles must resolve.
 
 ### Start Research
+
 1. Run `/rpi-research` on the scenario and available evidence:
 
    ```text
@@ -140,11 +142,10 @@ Keep each item evidence-based. Where data is unknown, write `Unknown` and note t
    ```
 
    Use a OneDrive folder that is governed by the organization's permissions, retention, and classification policies. Do not use a public sharing link or a personal OneDrive folder for production evidence.
-
-1. Review the generated research artifact at `.copilot-tracking/research/`. This is your permanent evidence trail.
-1. Extract and record key findings in a context document: problem statement, affected users, business impact, business rules, known failure cases, and AI guardrails. Reference the research artifact for traceability.
-1. Separate facts from assumptions, decisions, and open questions. Link or reference the supporting material when available.
-1. If you need structure, ask **BRD Builder** or **PRD Builder** to draft a business or product requirements outline. Start by sharing your notes and ask it to create a problem statement, business goals, scope, assumptions, and acceptance criteria.
+2. Review the generated research artifact at `.copilot-tracking/research/`. This is your permanent evidence trail.
+3. Extract and record key findings in a context document: problem statement, affected users, business impact, business rules, known failure cases, and AI guardrails. Reference the research artifact for traceability.
+4. Separate facts from assumptions, decisions, and open questions. Link or reference the supporting material when available.
+5. If you need structure, ask **BRD Builder** or **PRD Builder** to draft a business or product requirements outline. Start by sharing your notes and ask it to create a problem statement, business goals, scope, assumptions, and acceptance criteria.
 
    Use **BRD Builder** when the team needs to establish the business case, stakeholders, outcomes, constraints, and decision context:
 
@@ -225,14 +226,14 @@ understanding of the problem.
 ```
 
 12. Use **Accessibility Planner** and **Accessibility Reviewer** to surface accessibility requirements and review the draft for gaps.
-   Select the experience draft under `.copilot-tracking/dt/` and prompt Accessibility Planner:
+    Select the experience draft under `.copilot-tracking/dt/` and prompt Accessibility Planner:
 
 ```text
 "Review the experience draft under `.copilot-tracking/dt/` and identify accessibility requirements, user needs, follow-up questions for implementation, and updates to the draft."
 ```
 
 13. Use **RAI Planner** and **RAI Reviewer** to capture responsible AI requirements, guardrails, and review findings.
-   Select the experience draft under `.copilot-tracking/dt/` and use the **RAI Planner** prompt:
+    Select the experience draft under `.copilot-tracking/dt/` and use the **RAI Planner** prompt:
 
 ```text
 "Review the experience draft under `.copilot-tracking/dt/` and identify responsible AI requirements, potential harms, mitigation ideas, and updates to the draft."
@@ -257,7 +258,6 @@ Figma MCP is optional. It connects GitHub Copilot to Figma files and FigJam boar
        }
     }
     ```
-
 17. Save the file and reload VS Code if the MCP server does not appear in Copilot Chat.
 18. Start a Figma or FigJam action from the relevant design prompt, such as `dt-figma-export`.
 19. On the first call, complete the browser-based Figma OAuth sign-in and grant access to the files or boards used for the workshop.
@@ -266,7 +266,7 @@ Figma MCP is optional. It connects GitHub Copilot to Figma files and FigJam boar
 The Figma MCP server does not require a local installation. A Figma account with a Dev or Full seat on a Professional, Organization, or Enterprise plan is required for sustained usage. See [MCP Server Configuration](mcp-configuration) for the complete workspace configuration and troubleshooting guidance.
 
 21. Identify and validate the use case for publishing to Microsoft 365 Copilot Agent Store.
-   Select the experience draft under `.copilot-tracking/dt/` and prompt UX UI Designer:
+    Select the experience draft under `.copilot-tracking/dt/` and prompt UX UI Designer:
 
 ```text
 "How would end users benefit from Microsoft 365 Copilot integrated to this scenario? What research would I need to run to validate it? Update the experience draft under `.copilot-tracking/dt/`."
@@ -274,7 +274,7 @@ The Figma MCP server does not require a local installation. A Figma account with
 
 22. Note how the experience should be packaged, discoverable, and reviewable for Microsoft Marketplace and Microsoft 365 Copilot Agent Store.
 23. Define success criteria and unresolved questions.
-4. Save the reviewed results under `.copilot-tracking/dt/` as the experience draft.
+24. Save the reviewed results under `.copilot-tracking/dt/` as the experience draft.
 
 ### Deliverable
 
@@ -296,7 +296,6 @@ Turn business context and user experience into requirements, priorities, and a b
    ```
 
    This writes to `.copilot-tracking/plans/` and creates a durable record that links to your requirements and design context.
-
 3. Review the generated plan at `.copilot-tracking/plans/` and refine phase details as needed.
 4. Create a backlog outline only if it helps the team move from requirements to implementation. If needed, use a lightweight hierarchy such as epic, feature, story, and task for the first MVP.
 5. Prioritize the first MVP with simple labels such as P0, P1, and P2 only if the team needs a sequencing signal. Keep this lightweight and outcome-focused rather than turning it into a rigid Agile process.
@@ -350,27 +349,26 @@ Frame the solution approach, architecture, and publication considerations aligne
 
    * Note deployment, security, and operational considerations.
    * Review the draft for well-architected design and Cloud Adoption Framework guidance.
-   * Capture the publication requirements for Microsoft Marketplace and Microsoft 365 Copilot Agent Store readiness, including packaging, discoverability, supportability, and integration expectations.   
+   * Capture the publication requirements for Microsoft Marketplace and Microsoft 365 Copilot Agent Store readiness, including packaging, discoverability, supportability, and integration expectations.
 
    ```text
    "Review the implementation plan at `.copilot-tracking/plans/`, the requirements under `.copilot-tracking/prd-sessions/`, and the experience draft under `.copilot-tracking/dt/`. Create architecture notes under `.copilot-tracking/details/` covering a simple solution approach for each phase, major tradeoffs, cloud architecture, well-architected concerns, publication requirements, Microsoft IQ, and a Mermaid architecture diagram. Link the architecture notes back to the phases in the implementation plan."
    ```
-   * Create a simple Mermaid architecture diagram by selecting **Arch Diagram Builder**.
 
+   * Create a simple Mermaid architecture diagram by selecting **Arch Diagram Builder**.
 4. Use **Security Planner** to review readiness and surface follow-up work aligned to each phase.
 
    ```text
    "Review this solution draft for security risks, deployment considerations, and follow-up actions needed for each phase in the implementation plan. Link any security-related work back to the appropriate phase."
    ```
-
 5. Review the mermaid diagram and use natural language to refine it.
 6. (Optional) Instead of GitHub Copilot, use **Microsoft 365 Copilot** to create an image. In M365 Copilot, attach the implementation plan, and create an architecture image from the mermaid diagram for this solution using Azure and Copilot-style icons to represent core services, data sources, user experience layers, and integrations for the first MVP.
 
    ```text
-   "Create an architecture image from the Mermaid diagram for this solution using Azure and Copilot-style icons to represent core services, data sources, user experience layers, and integrations for the first MVP. "   
+   "Create an architecture image from the Mermaid diagram for this solution using Azure and Copilot-style icons to represent core services, data sources, user experience layers, and integrations for the first MVP. "
    ```
-   Save or reference the reviewed image under `.copilot-tracking/details/`.
 
+   Save or reference the reviewed image under `.copilot-tracking/details/`.
 7. Capture only the publication assumptions needed for the solution review in the architecture notes and link them to the implementation plan.
 
    * Select SaaS or Azure Managed Application as the preferred Marketplace model and the Microsoft 365 agent as a potential companion experience.
@@ -386,7 +384,6 @@ Frame the solution approach, architecture, and publication considerations aligne
    ```
 
    Complete the detailed readiness assessment during the [Partner Workshop Publishing Follow-Up](partner-workshop-publishing).
-
 8. Share the output with the rest of the team.
 
 ### Deliverable
@@ -404,6 +401,8 @@ Proceed to the [solution guide](partner-workshop-solution.md).
 ---
 
 <!-- markdownlint-disable MD036 -->
+
 *🤖 Crafted with precision by ✨Copilot following brilliant human instruction,
 then carefully refined by our team of discerning human reviewers.*
+
 <!-- markdownlint-enable MD036 -->

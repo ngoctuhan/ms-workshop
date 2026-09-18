@@ -1,0 +1,80 @@
+{
+  "prdFile": ".copilot-tracking/prd-sessions/compliance-check-system-prd.md",
+  "lastAccessed": "2026-09-18T00:00:00Z",
+  "currentPhase": "drafting",
+  "questionsAsked": [
+    "product-type",
+    "target-users",
+    "jobs-to-be-done",
+    "workflow-boundaries",
+    "risk-and-escalation"
+  ],
+  "answeredQuestions": {
+    "product-type": "Human-in-the-loop compliance review assistant",
+    "target-users": "Compliance analysts, frontline reviewers, policy owners, operations managers, audit and governance teams",
+    "jobs-to-be-done": "Review evidence, compare against policy, identify gaps and exceptions, prepare cases for human decision-making, and preserve traceability",
+    "workflow-boundaries": "Decision support workflow, not autonomous adjudication; final decisions remain with a human reviewer",
+    "risk-and-escalation": "Low-confidence, contradictory, or high-risk cases route to escalation instead of auto-approval"
+  },
+  "referencesProcessed": [
+    {
+      "file": "../research/2026-09-18/compliance-check-system-session-context.md",
+      "status": "analyzed",
+      "timestamp": "2026-09-18T00:00:00Z",
+      "keyFindings": "The scenario is a compliance-check workflow supported by an LLM with human accountability, traceability, auditability, and escalation requirements.",
+      "integratedSections": [
+        "facts",
+        "assumptions",
+        "scope",
+        "functional-requirements",
+        "guardrails"
+      ],
+      "conflicts": [],
+      "pendingActions": []
+    },
+    {
+      "file": "../research/2026-09-18/compliance-check-system-research.md",
+      "status": "analyzed",
+      "timestamp": "2026-09-18T00:00:00Z",
+      "keyFindings": "The likely value is faster case preparation and consistency; AI guardrails require source-grounding, escalation, audit logs, and sensitive-data minimization.",
+      "integratedSections": [
+        "jobs-to-be-done",
+        "risk-guardrails",
+        "known-failure-cases",
+        "success-metrics",
+        "non-functional-requirements"
+      ],
+      "conflicts": [],
+      "pendingActions": []
+    },
+    {
+      "file": "../research/workshop-input/README.md",
+      "status": "read",
+      "timestamp": "2026-09-18T00:00:00Z",
+      "keyFindings": "This is workshop evidence only; keep the artifact synthetic and treated as a draft for downstream product framing.",
+      "integratedSections": [
+        "evidence-base",
+        "draft-status"
+      ],
+      "conflicts": [],
+      "pendingActions": []
+    }
+  ],
+  "nextActions": [
+    "Confirm the exact policy library and workflow scope with a human reviewer",
+    "Validate target user roles and decision authority",
+    "Refine success metrics and operational thresholds once business owner confirms them",
+    "Add policy-specific acceptance criteria if a domain-specific control library is supplied"
+  ],
+  "qualityChecks": [
+    "evidence-traceability",
+    "facts-vs-assumptions-separate",
+    "draft-for-human-review",
+    "no-invented-policy-details"
+  ],
+  "userPreferences": {
+    "detail-level": "concise",
+    "question-style": "structured",
+    "status": "draft"
+  }
+}
